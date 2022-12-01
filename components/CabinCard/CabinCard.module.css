@@ -1,0 +1,49 @@
+.CabinsSection{
+    width: 80%;
+    margin: 0 auto 30px auto;
+    height: 100%;
+
+}
+.CabinSection h2{
+
+    margin: 0 0 40px 0;
+}
+
+.CabinSlider{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+
+
+}
+.CabinSlider::-webkit-scrollbar { 
+    display: none;  
+}
+.CabinCardContainer{
+    transition: 0.3s all ease-out;
+    margin: 40px 10px 0 0;
+
+}
+.CabinCardContainer:hover{
+transform: scale(1.01);
+}
+.CabinCardContainer h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.CabinCardImg{
+    position: relative;
+    width: 320px;
+    height: 320px;
+}
+.CabinCardImg img{
+    border-radius: 5px;
+}
+@media screen and (max-width: 540px) {
+    .CabinsSection{
+        width: 90%;
+    }
+}

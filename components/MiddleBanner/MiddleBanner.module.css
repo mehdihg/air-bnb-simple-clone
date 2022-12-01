@@ -1,0 +1,60 @@
+.MiddleBannerSection{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin: 50px auto 30px auto;
+
+}
+.MiddleBannerImg{
+    position: relative;
+    min-width: 300px;
+    height: 384px;
+}
+.MiddleBannerImg img{
+    object-fit: cover;
+    border-radius: 5px;
+}
+.MiddleBannerContent{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+.MiddleBannerContent h3{
+    width: 256px;
+   font-size: 36px;
+   margin-bottom: 12px;
+}
+.MiddleBannerContent h4{
+    font-weight: 400;
+    font-size: 16px;
+ }
+ .MiddleBannerContent button{
+    background-color: white;
+    color: rgb(248 113 113);
+    font-size: 16px;
+    padding: 8px 16px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.MiddleBannerContent button:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+.MiddleBannerContent button:active {
+    transform: scale(0.9);
+  }
+  @media screen and (max-width: 768px) {
+    .MiddleBannerSection{
+        width: 90%;
+    }
+    .MiddleBannerContent h3{
+        font-size: 32px;
+    }
+
+}

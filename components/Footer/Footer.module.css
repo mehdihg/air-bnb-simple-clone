@@ -1,0 +1,28 @@
+.Footer{
+    width: 100%;
+    background-color: rgba(175, 175, 175, 0.23);
+}
+.FooterContainer{
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.FooterContent{
+    padding: 25px 0;
+    color: rgba(64, 64, 64, 0.86);
+}
+.FooterContent h5{
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+.FooterContent p{
+    padding: 12px 0 0 0;
+    font-size: 13px;
+}
+@media screen and (max-width: 540px) {
+    .FooterContainer{
+        grid-template-columns: 1fr ;
+    }
+}

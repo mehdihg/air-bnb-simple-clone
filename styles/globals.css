@@ -1,11 +1,14 @@
 html,
-body {
+body,* {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+   
 }
-
+html,body{
+  overflow-x: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -15,12 +18,14 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@media screen and (max-width: 540px) {
+.rdrDateRangePickerWrapper {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: column !important;
+}
+.rdrDefinedRangesWrapper {
+  width: 100%;
+  flex-grow: 1;
+}
 }

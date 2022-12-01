@@ -1,0 +1,56 @@
+.SeachCardMain{
+    display: flex;
+    min-height: 100vh;
+}
+.SeachContentCard{
+    flex-grow: 1;
+    padding:56px 24px 0 24px ;
+}
+.SeachCardDetail{
+    font-size: 12px;
+    margin-top: 40px;
+}
+.SeachCardTitle{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 24px;
+
+
+}
+.SeachCardFilter{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(91, 91, 91, 0.120);
+}
+.SeachCardFilter p{
+border:1px solid rgba(91, 91, 91, 0.764);
+padding: 8px 16px;
+margin: 0 8px 0 0;
+border-radius: 20px;
+transition: all 0.1s ease-out;
+cursor: pointer;
+
+}
+.SeachCardFilter p:hover{
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.SeachCardFilter p:active{
+      transform: scale(0.95);
+      background-color: rgba(91, 91, 91, 0.104);
+}
+
+@media screen and (max-width: 540px) {
+    .SeachCardFilter{
+        display: none;
+    }
+    .SeachContentCard{
+        padding: 0 24px 0 24px;
+    }
+    .SeachCardDetail{
+        margin-top: 25px;
+    }
+    .SeachCardTitle{
+        font-size: 28px;
+    }
+}

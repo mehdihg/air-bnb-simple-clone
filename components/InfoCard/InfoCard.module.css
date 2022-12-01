@@ -1,0 +1,88 @@
+.InfoCardContainer{
+    display: flex;
+    padding: 20px 10px 20px 0;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(91, 91, 91, 0.120);
+    transition: 0.2s ease-out;
+    margin: 0 0 25px 0;
+}
+
+.InfoCardContainer:hover{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    opacity: 0.8;
+}
+.InfoCardImg{
+    position: relative;
+    width: 320px;
+    height: 210px;
+    flex-shrink: 0;
+    object-fit: cover;
+
+}
+.InfoCardImg img{
+    border-radius: 10px;
+}
+.InfoCardContent{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 20px;
+}
+.InfoCardLocation{
+    display: flex;
+    justify-content: space-between;
+}
+.InfoCardBorder{
+    width: 40px;
+    height: 1px;
+    padding-top: 8px;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.323);
+}
+.InfoCardTitle{
+    font-size: 20px;
+}
+.InfoCardDesc{
+     color: rgb(107 114 128);
+    padding-top: 8px;
+    font-size: 14px;
+    flex-grow: 1;
+}
+.InfoCardDetail{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.InfoCardRate{
+    display: flex;
+    align-items: center;
+}
+.InfoCardRate svg{
+    font-size: 20px;
+    fill: rgb(255, 175, 1);
+}
+.InfoCardRate{
+    font-size: 16px;
+}
+.InfoCardPrices p{
+font-size: 18px;
+font-weight: 600;
+}
+.InfoCardPrices h5{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right;
+}
+@media screen and (max-width: 600px) {
+    .InfoCardContainer{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .InfoCardContent{
+        padding: 20px 0;
+    }
+    .InfoCardImg{
+        width: 100%;
+    }
+    
+}
